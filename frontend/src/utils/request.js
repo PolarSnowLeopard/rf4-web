@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "http://fdueblab.cn:8888",
+  baseURL: "http://fdueblab.cn:9999",
   timeout: 10000,
   withCredentials: true,
 });
