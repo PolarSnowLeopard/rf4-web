@@ -2,10 +2,9 @@ version: '3.9'
 
 services:
   rf4-backend:
+    # 仅生产部署使用（CI 只 scp 本文件到生产机，不传 backend/ 源码）。
+    # 本地构建镜像请直接：docker build -t polarsnowleopard/rf4-backend:latest backend
     image: polarsnowleopard/rf4-backend:latest
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
     restart: always
     ports:
       - "9999:9999"
