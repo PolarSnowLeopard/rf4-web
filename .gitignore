@@ -1,0 +1,57 @@
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== Secrets / Env =====
+.env
+.env.*
+!.env.example
+
+# ===== Python (backend & legacy desktop) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.uv/
+.uv-cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ===== Django (backend) =====
+backend/app/staticfiles/
+backend/app/media/
+backend/**/db.sqlite3
+backend/**/local_settings.py
+
+# ===== Node / Vite (frontend) =====
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== PyInstaller (legacy desktop) =====
+legacy/desktop/build/
+legacy/desktop/dist/
+legacy/desktop/*.spec.bak
+
+# ===== Logs / Temp =====
+*.log
+logs/
+tmp/
+temp/
