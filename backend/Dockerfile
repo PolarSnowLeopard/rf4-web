@@ -6,6 +6,14 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     DJANGO_SETTINGS_MODULE=rf4.settings
 
+# 安装系统编译依赖（mysqlclient 需要）
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        build-essential \
+        pkg-config \
+        default-libmysqlclient-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # 安装uv和必要依赖
 RUN pip install --no-cache-dir uv whitenoise
 
