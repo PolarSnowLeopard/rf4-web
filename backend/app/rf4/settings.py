@@ -55,6 +55,7 @@ SIMPLE_JWT = {
 INSTALLED_APPS = [
     'user',
     'wiki',
+    'recognition',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',

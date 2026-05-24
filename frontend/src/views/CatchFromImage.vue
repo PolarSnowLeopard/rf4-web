@@ -52,7 +52,7 @@
 import { ref } from 'vue'
 import { message } from 'ant-design-vue'
 import { UploadOutlined } from '@ant-design/icons-vue'
-import { postCatchFromImage } from '@/api/wiki'
+import { postCatchFromImage } from '@/api/recognition'
 
 const loading = ref(false)
 const displayImage = ref('')
