@@ -1,62 +1,65 @@
+import logging
+import base64
+from io import BytesIO
+
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
+from PIL import Image
 
-from recognition.serializers.catchSerializer import ImageUploadSerializer, ImageProcessingResponseSerializer
-from services.catch_extractor.main import extract_fishes
+from recognition.serializers.catchSerializer import (
+    ImageUploadSerializer,
+    ImageProcessingResponseSerializer,
+)
+from services.recognition.catch_extractor import extract_fishes
+from services.llm.exceptions import LlmUpstreamError, LlmTimeoutError, LlmInvalidResponseError
 
-import os
-from django.conf import settings
-import base64
-from io import BytesIO
+log = logging.getLogger(__name__)
 
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def get_catch_from_image(request):
-    """
-    从上传的图片中识别渔获信息
-    ---
-    请求体:
-      image: 鱼类图片文件
-    响应:
-      image: 处理后的图片（Base64编码）
-      fishes: 识别出的渔获列表，格式为二维数组:
-        [[时间百分比, 鱼名, 重量, 分数],
-         [时间百分比, 鱼名, 重量, 分数], ...]
-
-        例如: [["42分-97%", "镜鲤", "3.705公斤", "2.59"], ...]
+    """从上传的截图识别渔获。
+    Response: {"image": <base64 png>, "fishes": [[freshness, name, weight, price], ...]}
     """
     serializer = ImageUploadSerializer(data=request.data)
     if not serializer.is_valid():
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    original_image = serializer.validated_data['image']
+    upload = serializer.validated_data['image']
+    try:
+        image = Image.open(upload).convert("RGB")
+    except Exception as e:
+        return Response({"detail": f"无法解析图片: {e}"}, status=status.HTTP_400_BAD_REQUEST)
 
-    image_path = os.path.join(settings.ASSETS_DIR, 'original_image.png')
-    if not os.path.exists(os.path.dirname(image_path)):
-        os.makedirs(os.path.dirname(image_path))
+    try:
+        annotated, fishes = extract_fishes(image=image)
+    except LlmTimeoutError as e:
+        log.warning("VLM timeout: %s", e)
+        return Response(
+            {"detail": "模型调用超时，请稍后重试", "code": "LLM_TIMEOUT"},
+            status=status.HTTP_504_GATEWAY_TIMEOUT,
+        )
+    except LlmUpstreamError as e:
+        log.warning("VLM upstream failure: %s", e)
+        return Response(
+            {"detail": "上游模型暂不可用，请稍后重试", "code": "LLM_UPSTREAM_ERROR"},
+            status=status.HTTP_502_BAD_GATEWAY,
+        )
+    except LlmInvalidResponseError as e:
+        log.warning("VLM invalid response: %s", e)
+        return Response(
+            {"detail": "模型返回内容无法解析", "code": "LLM_INVALID_RESPONSE"},
+            status=status.HTTP_502_BAD_GATEWAY,
+        )
 
-    with open(image_path, 'wb') as f:
-        f.write(original_image.read())
+    buf = BytesIO()
+    annotated.save(buf, format="PNG")
+    image_b64 = base64.b64encode(buf.getvalue()).decode("utf-8")
 
-    image, fishes = extract_fishes(image_path=image_path)
-
-    with open(os.path.join(settings.ASSETS_DIR, 'result_image.png'), 'wb') as f:
-        image.save(f, format='PNG')
-
-    img_buffer = BytesIO()
-    image.save(img_buffer, format='PNG')
-    img_buffer.seek(0)
-    image = base64.b64encode(img_buffer.read()).decode('utf-8')
-
-    response_data = {
-        'image': image,
-        'fishes': fishes
-    }
-
-    response_serializer = ImageProcessingResponseSerializer(data=response_data)
-    response_serializer.is_valid(raise_exception=True)
-
-    return Response(response_serializer.validated_data)
+    payload = {"image": image_b64, "fishes": fishes}
+    resp = ImageProcessingResponseSerializer(data=payload)
+    resp.is_valid(raise_exception=True)
+    return Response(resp.validated_data)
