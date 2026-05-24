@@ -1,0 +1,1 @@
+from services.recognition.catch_extractor import extract_fishes
