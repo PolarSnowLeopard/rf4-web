@@ -47,13 +47,13 @@
             <a-tag :color="getClassColor(fish.fish_class)">{{ fish.fish_class }}</a-tag>
           </template>
           <div class="fish-info">
-            <div class="info-row">
-              <span class="info-label">稀有重量：</span>
+            <div class="info-row" v-if="fish.rare_weight">
+              <span class="info-label">上星：</span>
               <span class="info-value">{{ fish.rare_weight }}</span>
             </div>
-            <div class="info-row">
-              <span class="info-label">超稀有重量：</span>
-              <span class="info-value">{{ fish.super_rare_weight }}</span>
+            <div class="info-row" v-if="fish.fishing_method">
+              <span class="info-label">钓法：</span>
+              <span class="info-value">{{ fish.fishing_method }}</span>
             </div>
           </div>
         </a-card>

@@ -14,43 +14,55 @@
           <div class="fish-image-container">
             <img :src="fishDetail.img" :alt="fishDetail.name" class="fish-image" />
           </div>
-          
+
           <div class="fish-info-container">
             <div class="fish-basic-info">
-              <div class="info-item">
-                <span class="info-label">类别：</span>
-                <a-tag :color="getClassColor(fishDetail.fish_class)">{{ fishDetail.fish_class }}</a-tag>
+              <div class="info-item" v-if="fishDetail.name_en">
+                <span class="info-label">英文名：</span>
+                <span class="info-value">{{ fishDetail.name_en }}</span>
               </div>
-              
+
               <div class="info-item">
-                <span class="info-label">稀有重量：</span>
+                <span class="info-label">稀有度：</span>
+                <a-tag :color="getClassColor(fishDetail.fish_class)">{{ fishDetail.fish_class || '未知' }}</a-tag>
+              </div>
+
+              <div class="info-item" v-if="fishDetail.rare_weight">
+                <span class="info-label">上星重量：</span>
                 <span class="info-value rare-weight">{{ fishDetail.rare_weight }}</span>
               </div>
-              
-              <div class="info-item">
-                <span class="info-label">超稀有重量：</span>
+
+              <div class="info-item" v-if="fishDetail.super_rare_weight">
+                <span class="info-label">蓝冠重量：</span>
                 <span class="info-value super-rare-weight">{{ fishDetail.super_rare_weight }}</span>
               </div>
-              
-              <div class="info-item last-update">
-                <span class="info-label">更新时间：</span>
-                <span class="info-value">{{ formatDate(fishDetail.updated_at) }}</span>
+
+              <div class="info-item" v-if="fishDetail.fishing_method">
+                <span class="info-label">钓法：</span>
+                <span class="info-value">{{ fishDetail.fishing_method }}</span>
+              </div>
+
+              <div class="info-item" v-if="fishDetail.habitats && fishDetail.habitats.length">
+                <span class="info-label">栖息水域：</span>
+                <span class="info-value">
+                  <a-tag v-for="h in fishDetail.habitats" :key="h" color="blue">{{ h }}</a-tag>
+                </span>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="fish-description-card">
           <h2 class="section-title">鱼类描述</h2>
           <div class="description-content">
             <p>{{ fishDetail.description }}</p>
           </div>
         </div>
-        
-        <div class="related-info-card">
-          <h2 class="section-title">相关信息</h2>
-          <div class="info-message">
-            <InfoCircleOutlined /> 更多相关信息正在开发中，敬请期待！
+
+        <div class="fish-baits-card" v-if="fishDetail.baits && fishDetail.baits.length">
+          <h2 class="section-title">推荐饵料</h2>
+          <div class="baits-list">
+            <a-tag v-for="bait in fishDetail.baits" :key="bait" color="green" class="bait-tag">{{ bait }}</a-tag>
           </div>
         </div>
       </div>
@@ -70,7 +82,7 @@
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getFishDetail } from '@/api/wiki'
-import { ArrowLeftOutlined, InfoCircleOutlined } from '@ant-design/icons-vue'
+import { ArrowLeftOutlined } from '@ant-design/icons-vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -131,15 +143,14 @@ const formatDate = (dateString) => {
 
 const getClassColor = (fishClass) => {
   const colors = {
-    '淡水鱼': 'blue',
-    '海水鱼': 'cyan',
-    '湖泊鱼': 'green',
-    '河流鱼': 'gold',
-    '掠食鱼': 'orange',
-    '稀有鱼': 'purple',
-    '常见': 'geekblue'
+    '常见': 'geekblue',
+    '稀有': 'purple',
+    '罕见': 'magenta',
+    '稀有鱼种': 'purple',
+    '罕见鱼种': 'magenta',
+    '传说': 'gold',
+    '独特': 'red',
   }
-  
   return colors[fishClass] || 'default'
 }
 </script>
@@ -245,11 +256,22 @@ const getClassColor = (fishClass) => {
   color: #8c8c8c;
 }
 
-.fish-description-card, .related-info-card {
+.fish-description-card, .fish-baits-card {
   background-color: #fff;
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.baits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bait-tag {
+  font-size: 0.9rem;
+  padding: 4px 10px;
 }
 
 .section-title {
@@ -267,15 +289,6 @@ const getClassColor = (fishClass) => {
   white-space: pre-line;
 }
 
-.info-message {
-  color: #5a6c7d;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px;
-  background-color: #f0f7ff;
-  border-radius: 5px;
-}
 
 .error-message {
   margin-top: 30px;
