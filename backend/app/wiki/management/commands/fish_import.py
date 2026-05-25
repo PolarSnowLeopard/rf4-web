@@ -31,11 +31,16 @@ class Command(BaseCommand):
                     continue
 
                 fields = {
+                    'name_en': fish_item.get('name_en', ''),
                     'description': fish_item.get('description', ''),
                     'img': fish_item.get('img', ''),
                     'fish_class': fish_item.get('fish_class', ''),
+                    'stars': fish_item.get('stars', 0),
                     'rare_weight': fish_item.get('rare_weight', ''),
                     'super_rare_weight': fish_item.get('super_rare_weight', ''),
+                    'habitats': fish_item.get('habitats', []),
+                    'fishing_method': fish_item.get('fishing_method', ''),
+                    'baits': fish_item.get('baits', []),
                 }
 
                 if options['update']:
