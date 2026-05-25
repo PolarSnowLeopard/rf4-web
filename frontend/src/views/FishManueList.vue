@@ -83,7 +83,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { getFishManueList } from '@/api/wiki'
 
@@ -92,7 +92,7 @@ const route = useRoute()
 
 // 分页相关状态
 const page = ref(1)
-const pageSize = ref(21) // 修改为与后端一致的页面大小
+const pageSize = ref(20)
 const total = ref(0)
 const manueList = ref([])
 const loading = ref(true)
@@ -100,8 +100,35 @@ const searchText = ref('')
 const selectedClass = ref(null)
 const fishClasses = ref([])
 
+const CARD_MIN_WIDTH = 200
+const CARD_GAP = 20
+const CONTAINER_PADDING = 50 // 25px * 2
+const TARGET_ROWS = 4
+
+const calcPageSize = () => {
+  const containerWidth = window.innerWidth - CONTAINER_PADDING
+  const cols = Math.floor((containerWidth + CARD_GAP) / (CARD_MIN_WIDTH + CARD_GAP))
+  const effectiveCols = Math.max(cols, 1)
+  return effectiveCols * TARGET_ROWS
+}
+
+let resizeTimer = null
+const onResize = () => {
+  clearTimeout(resizeTimer)
+  resizeTimer = setTimeout(() => {
+    const newSize = calcPageSize()
+    if (newSize !== pageSize.value) {
+      pageSize.value = newSize
+      fetchFishManueList()
+    }
+  }, 300)
+}
+
 // 从URL参数恢复状态
 onMounted(() => {
+  pageSize.value = calcPageSize()
+  window.addEventListener('resize', onResize)
+
   if (route.query.page) {
     page.value = parseInt(route.query.page) || 1
   }
@@ -111,8 +138,12 @@ onMounted(() => {
   if (route.query.class) {
     selectedClass.value = route.query.class
   }
-  
+
   fetchFishManueList()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
 })
 
 // 监听筛选条件变化，重置页码并重新加载
