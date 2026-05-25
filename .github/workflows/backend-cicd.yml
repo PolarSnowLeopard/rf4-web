@@ -69,3 +69,6 @@ jobs:
             sudo docker pull polarsnowleopard/rf4-backend:latest
             sudo docker-compose down || true
             sudo docker-compose up -d
+            # Wait for container to start, then apply migrations
+            sleep 5
+            sudo docker-compose exec -T rf4-backend python manage.py migrate --noinput
