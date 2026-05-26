@@ -96,6 +96,10 @@ const items = computed(() => {
                     key: '/manue/food',
                     label: '食品图鉴',
                 },
+                {
+                    key: '/manue/accessory',
+                    label: '辅助用品图鉴',
+                },
             ],
         },
         {

@@ -9,6 +9,7 @@ from wiki.views.hookView import hook_list, hook_detail, hook_types
 from wiki.views.rigView import rig_list, rig_detail, rig_types
 from wiki.views.groundbaitView import groundbait_list, groundbait_detail, groundbait_types
 from wiki.views.foodView import food_list, food_detail, food_types
+from wiki.views.accessoryView import accessory_list, accessory_detail, accessory_types
 
 urlpatterns = [
     path('fish', fish_list),
@@ -40,4 +41,7 @@ urlpatterns = [
     path('food', food_list),
     path('food/types', food_types),
     path('food/<int:pk>', food_detail),
+    path('accessory', accessory_list),
+    path('accessory/types', accessory_types),
+    path('accessory/<int:pk>', accessory_detail),
 ]
