@@ -76,6 +76,10 @@ const items = computed(() => {
                     key: '/manue/reel',
                     label: '渔轮图鉴',
                 },
+                {
+                    key: '/manue/line',
+                    label: '鱼线图鉴',
+                },
             ],
         },
         {
