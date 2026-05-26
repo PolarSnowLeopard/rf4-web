@@ -88,6 +88,10 @@ const items = computed(() => {
                     key: '/manue/rig',
                     label: '钓组图鉴',
                 },
+                {
+                    key: '/manue/groundbait',
+                    label: '诱饵图鉴',
+                },
             ],
         },
         {

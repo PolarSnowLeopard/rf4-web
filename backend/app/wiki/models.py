@@ -191,3 +191,23 @@ class Rig(models.Model):
     def __str__(self):
         return self.name
 
+
+class Groundbait(models.Model):
+    """诱饵"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    groundbait_type = models.CharField('类型', max_length=100, blank=True, default='')
+    weight = models.CharField('重量', max_length=100, blank=True, default='')
+    brand = models.CharField('品牌', max_length=100, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'groundbait_type'], name='unique_groundbait_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+

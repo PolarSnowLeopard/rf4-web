@@ -102,6 +102,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/groundbait',
+        name: 'manueGroundbait',
+        component: () => import('@/views/GroundbaitList.vue')
+      },
+      {
+        path: '/manue/groundbait/:id',
+        name: 'manueGroundbaitDetail',
+        component: () => import('@/views/GroundbaitDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
