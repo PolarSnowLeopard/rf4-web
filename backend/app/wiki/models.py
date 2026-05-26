@@ -211,3 +211,23 @@ class Groundbait(models.Model):
     def __str__(self):
         return self.name
 
+
+class Food(models.Model):
+    """食品"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    food_type = models.CharField('类型', max_length=100, blank=True, default='')
+    effect = models.TextField('效果', blank=True, default='')
+    brand = models.CharField('品牌', max_length=100, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'food_type'], name='unique_food_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+

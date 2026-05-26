@@ -1,0 +1,1026 @@
+[
+  {
+    "name": "Woodman Cask Can啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/734940.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Woodman Dark Can啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/174088.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Woodman Lager Can啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/98830.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "三个坦克手 传统",
+    "food_type": "酒（商）",
+    "description": "“拉普星啤酒厂”企业属于所谓的“多行业”企业类别。除了啤酒之外，这里还生产橡胶鞋和铀浓缩设备。 这里的啤酒生产三种品种。所有人都喜欢的“三个坦克手。传统” “三个坦克手。烈性”或者，像企业员工开玩笑那样叫“浓缩”。最后是“三个坦克手。出口”",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/65422.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "三个坦克手 烈性",
+    "food_type": "酒（商）",
+    "description": "企业“拉普星啤酒厂”属于所谓的“多行业”企业类别。除了啤酒之外，这里还生产橡胶鞋和铀浓缩设备。 这里的啤酒生产三种品种。所有人都喜欢的“三个坦克手。传统”。“三个坦克手。烈性”或者，像企业员工开玩笑那样叫“浓缩”。最后是“三个坦克手。出口”",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/64657.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "三个坦克手 出口",
+    "food_type": "酒（商）",
+    "description": "企业“拉普星啤酒厂”属于所谓的“多行业”企业类别。除了啤酒之外，这里还生产橡胶鞋和铀浓缩设备。 这里的啤酒生产三种品种。所有人都喜欢的“三个坦克手。传统”。“三个坦克手。烈性”或者，像企业员工开玩笑那样叫“浓缩”。最后是“三个坦克手。出口”",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/360156.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Woodman Cask Bottle啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/887605.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Woodman Dark Bottle啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/866845.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Woodman Lager Bottle啤酒",
+    "food_type": "酒（商）",
+    "description": "Woodman –英语中的“Woodman”的意思是“樵夫”。这使得一些专家有理由断言生产樵夫啤酒的主要成分是转基因木屑。但是曾经至少一次尝试过这种美味泡沫饮料，任何“锯末”理支持者都会将被称为温和的乐天派。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/549963.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Chepraga波尔特温酒",
+    "food_type": "酒（商）",
+    "description": "摩尔多瓦葡萄酒一直是高品质葡萄酒酿造的象征。 “Chepraga”的波尔特温酒也不例外。 这种含酒精的葡萄酒饮料以其丰富的香气和精致的余味而闻名。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/956793.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "无产阶级伏特加",
+    "food_type": "酒（商）",
+    "description": "伏特加“无产阶级” - 它的味道是惊人的，像锤击一般。饮料对人体的影响尚未得到充分研究，但现在可以肯定的是，它是存在的。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/456849.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "NOVOPOKROVSKOE香槟",
+    "food_type": "酒（商）",
+    "description": "NOVOPOKROVSKOE香槟 – 阿拉蒂尔葡萄酒公司生产的最受欢迎的产品之一。 这种香槟的特点是口感丰富，回味难忘。 使用独特的技术可以使这种美味饮料的制作过程尽可能便宜，并且对价格有正面影响。 通常，香槟与假期或某个重要事件有关。 不要等待假期 - 现在就喝醉吧！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/54629.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "NOVOPOKROVSKOE威望香槟",
+    "food_type": "酒（商）",
+    "description": "NOVOPOKROVSKOE威望 -是阿拉蒂尔葡萄酒公司系列产品中真正的极品。 精致、完美平衡的香槟具有高雅的口感， 配有优雅的六公升瓶装。 在俄罗斯，有许多有关饮用此种酒的传统，有些甚至非比寻常。俄罗斯轻骑兵的娱乐之一，就是让马在香槟中沐浴。Novopokrovskoe威望的瓶子，不仅a可以让马沐浴其中，竟然也可以让中等大小的象沐浴其中。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/367047.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "将军白兰地",
+    "food_type": "酒（商）",
+    "description": "最近，LIVOZ“友谊”公司的产品已经增添了两种新饮料。 这些是“将军”和“元帅”白兰地。 制造商将他们定位为严格的男士饮料，这要求用户具有一定的经验和技能。 尽管它们新颖，但这些白兰地饮料不仅受军队喜爱，还受到其它勇敢职业人士的喜爱。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/109243.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "冰镇博亚尔斯基伏特加",
+    "food_type": "酒（商）",
+    "description": "冰镇博亚尔斯基伏特加是使用古老的食谱生产的，并以真正的俄罗斯口味为特色。 沉浸在博亚尔斯基节日酒食的舒适氛围中，并在早晨充分享受令人难忘的博亚尔斯基宿醉。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/167080.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "元帅白兰地",
+    "food_type": "酒（商）",
+    "description": "最近，LIVOZ“友谊”公司的产品已经增添了两种新酒。 这些是“将军”和“元帅”白兰地。 制造商将他们定位为严格的男士饮料，这要求用户具有一定的经验和技能。 尽管它们新颖，但这些白兰地饮料不仅受军队喜爱，还受到其它勇敢职业人士的喜爱。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/784694.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "金色帝国伏特加",
+    "food_type": "酒（商）",
+    "description": "伏特加“金色帝国”属于“高级”类烈酒饮品。 根据生产商的说法，这款饮料采用基于最新技术的环保配料制成，不仅无害，而且对身体非常有益。虽然很难确定这些收益是否与所消费的产品数量成正比，但专家们一致认为：“金色帝国是可以用钱买到的最好的”",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/141504.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Kuban Blanche酒",
+    "food_type": "酒（商）",
+    "description": "带有香草和热带水果风味的金色清新霞多丽。 带有柑橘的和谐调和味。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/375949.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Ruby Diamond酒",
+    "food_type": "酒（商）",
+    "description": "鲜红宝石色的酒。 散发着鲜花，野莓，草莓和香草的香气。 它具有均衡，优雅的口感，并带有加茶藨子和樱桃的香气，使酒体悠长。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/41690.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小铃铛柠檬水",
+    "food_type": "饮料（商）",
+    "description": "“Lapshin啤酒厂”没有忘记孩子。技术发展和合理化建议使得在企业中建立柠檬水“小铃铛”的生产成为可能，不仅在儿童中，而且在成人中亦获得好评，因为它是最受欢迎的鸡尾酒中不可或缺的成分。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/641245.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "胡萝卜",
+    "food_type": "食物（商）",
+    "description": "胡萝卜是地球上最常见的十种蔬菜作物之一。 它几乎可以在世界各地的美食中找到。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/805790.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "螺纹面包",
+    "food_type": "食物（商）",
+    "description": "螺纹面包 – 苏联烘焙业的真正传奇。螺纹面包是莫斯科和圣彼得堡（莫斯科 列.宁格勒）居民为数不多同样称谓的几件事情之一。螺纹面包是一种通用食品。它不仅可以与不同的菜肴完美结合，而且如果需要它也可以作为第一道菜，第二道菜甚至甜点。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/9318.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "黄瓜",
+    "food_type": "食物（商）",
+    "description": "这种常见的蔬菜可以新鲜或腌制食用。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/735840.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Sugar Duck Classic",
+    "food_type": "食物（商）",
+    "description": "这是一个极好味道的糖果，由牛奶巧克力和坚果焦糖制成。一个糖果可以很容易地和很长一段时间满足饥饿感。Sugar Duck公司的产品不仅在各行业人士中有很高的需求量，而且在全世界的牙医和营养学家中广为人知",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/933479.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "巴氏消毒牛奶",
+    "food_type": "食物（商）",
+    "description": "由于使用纳米技术，牛奶保留了所有有用的特性，同时可以永久保存，即使在开放的包装中也不会损失使用属性。具有鲜明现代设计的一升包装在运输方面非常方便，并且能够让使用者常年喜悦。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/265743.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "洋葱",
+    "food_type": "食物（商）",
+    "description": "世界著名的蔬菜作物，广泛用于烹饪。 它被添加到各种菜肴，包括汤。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/841367.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "软形干酪",
+    "food_type": "食物（商）",
+    "description": "“人造卫星”软形干酪具有许多有价值的消费特性：它不含有毒素和对人体有害的物质，便于运输并且易于再利用。 来自“Food Factory”公司的软形干酪将成为您忠实可靠的旅伴。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/779859.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "秋刀鱼",
+    "food_type": "食物（商）",
+    "description": "鱼罐头“秋刀鱼” - “FoodFactory”公司生产的鱼产品种类繁多。但它的一个特殊系列就是罐装秋刀鱼。刀鱼不比鲑鱼或鲟鱼更受欢迎，但它更便宜。当你看着这个带有彩色标签的罐子时，你会想象海洋空间和无限自由，并相信它的内在不会让你失望。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/144385.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一包盐",
+    "food_type": "食物（商）",
+    "description": "Food Factory公司以其创造性的方式来制造商品而闻名。 即使是像食盐这样简单的产品，品牌包装都令顾客感到惊奇不止，在最令人意想不到的地方裂开，给人以欢乐的笑声和无数的笑话。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/424184.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一包通心粉",
+    "food_type": "食物（商）",
+    "description": "尽管外观不雅，口感相当平庸，但“Food Factory”公司生产的面食在买家中的需求量很大。专家通过烹饪的便利性和与其它公产品的高度兼容性来解释这种流行。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/48462.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小麦粉",
+    "food_type": "食物（商）",
+    "description": "Food Factory 公司生产的小麦面粉符合最高质量标准。它被广泛应使用各个领域。特别是可以食用，对健康无任何危害。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/142303.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "大米",
+    "food_type": "食物（商）",
+    "description": "虽然水稻生长在温暖湿润气候地区，但它长期以来一直是烹饪传统的一部分，即使在那，人们知道如何珍稀一个短暂，可是有点雪的夏季。 米饭是许多菜肴中的一种成分，但不贪婪的，经验丰富的钓者不会急于自己吃光所有的米饭，而是考虑钓鱼时，将其添加到诱饵中。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/863787.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "香肠",
+    "food_type": "食物（商）",
+    "description": "“先锋”香肠 - 确实是FoodFactory公司肉类产品的“珍宝”之一。像公司所有其他产品一样，香肠具有无限的保质期和同样卓越的使用属性。“先锋”香肠既是一顿饭，也是搭配各种饮料的小吃。它们能够随时支持你的体力。正如FoodFactory的员工总喜欢说：“我们的香肠随时可以食用！你准备好了吗？",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/283407.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "碎麦米",
+    "food_type": "食物（商）",
+    "description": "不要忘记Food Factory和营养食品。该公司生产的碎麦米对健康非常好。我们很多人从幼儿园时期都记得它无与伦比的味道，它由白色的块状物质制成。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/677476.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "猪肉罐头",
+    "food_type": "食物（商）",
+    "description": "FoodFactory猪肉罐头 – 关于猪肉罐头已经写过很多，没有什么可补充的。只能说，让人食欲大涨，大片的月桂叶，以及在这美丽罐子里的东西让任何人都无法无动于衷。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/803947.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "大麦米",
+    "food_type": "食物（商）",
+    "description": "Food Factory生产的大麦米是丰富的维生素和矿物质来源。 这款产品如此受欢迎，以至于煮熟的粥已经赢得了“基尔扎”和“施拉普耐尔”这样深情的绰号。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/740030.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "燕麦粥",
+    "food_type": "食物（商）",
+    "description": "燕麦粥（赫耳库勒斯） - 由燕麦粒制成的麦片。它们以古希腊神话中的英雄命名。这就说明了它们对健康是多么的有好处。此外，这个美食是最佳的补充诱饵。因此，赫耳库勒斯不仅可以让您钓到胜利标志的鱼，还可以给您把它拖上岸的力量。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/67967.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "荞麦",
+    "food_type": "食物（商）",
+    "description": "荞麦来自印度，但它从希腊来到俄罗斯，因此得名。 荞麦去壳煮的粥同样叫荞麦粥。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/743104.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "豌豆",
+    "food_type": "食物（商）",
+    "description": "豌豆 – 最有效的诱饵之一。用它可以捕捉许多鲤鱼。它对鲫鱼，拟鲤，欧鳊和圆鳍雅罗鱼特别有吸引力。在炙热的夏季，使用豌豆作为鱼饵特别有效，因为鱼主要以植物性食物为食。新鲜和罐头豌豆都可以用作诱饵。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/572594.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "苹果",
+    "food_type": "食物（商）",
+    "description": "苹果是苹果树的果实，在俄罗斯中部的庭院中最常见的就是苹果树。苹果可以新鲜食用或使用制作各种菜肴和饮料。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/572769.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "糖",
+    "food_type": "食物（商）",
+    "description": "一些专家说，吃糖会直接导致糖尿病。 “Food Factory”公司一直专注于人们，他们确切知道他们想要什么，并直接朝着他们的目标前进。 这款产品适合他们。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/816987.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "黄油",
+    "food_type": "食物（商）",
+    "description": "黄油是由高脂牛奶制成的，经常被用于烹调各种菜肴和烘培。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/500887.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "黑胡椒",
+    "food_type": "食物（商）",
+    "description": "黑胡椒是世界上最受欢迎的香料。 本身是完全不可食用的，但通常用作各种菜肴的调味料。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/343996.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "猪肉",
+    "food_type": "食物（商）",
+    "description": "我们星球上消费最多的肉类。 适合烧烤。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/666537.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "葵花油",
+    "food_type": "食物（商）",
+    "description": "优质向日葵油是“Food Factory”的名片之一。在员工之间称之为第一榨出油，因为油厂是年轻公司收购的第一家企业。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/221484.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "蜂蜜",
+    "food_type": "食物（商）",
+    "description": "据FoodFactory公司介绍，他们的蜂蜜质量比农民的要好得多。 公司的代表拒绝透露商业秘密的细节。 但考虑到它的价格，这款蜂蜜一定是一流的。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/444967.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一包茶",
+    "food_type": "食物（商）",
+    "description": "“Food Factory”公司生产的黑毫茶 -- 这是传统的贡品，也许如今，是那些喜欢不寻常饮品的人，品尝这种叶子汤剂的唯一可能。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/358611.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "酵母",
+    "food_type": "食物（商）",
+    "description": "酵母广泛用于烹饪，包括烈性酒的生产。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/818328.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "巧克力蛋糕",
+    "food_type": "食物（商）",
+    "description": "精美的巧克力蛋糕，装饰有俄罗斯钓鱼4的符号。对身材绝对无害，不会上瘾。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/413611.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "冷冻鱿鱼",
+    "food_type": "食物（商）",
+    "description": "整个冷冻鱿鱼。 由于急速冷冻，它能够长时间保存新鲜鱿鱼的所有应用性能。 适合制作鱼饵。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/268157.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一包可可粉",
+    "food_type": "食物（商）",
+    "description": "美味的热饮由可可粉制成。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/157825.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "克拉科夫香肠",
+    "food_type": "食物（商）",
+    "description": "克拉科夫香肠 – 让FoodFactory和美食家无法忘记。在公司生产的各种肉类产品中，克拉科夫香肠占有一个特殊的位置。虽然这种产品很难归类为美味佳肴，但它的营养和能量价值至少能够让曾经尝试过FoodFactory的克拉科夫香肠感到惊喜并将其描述。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/239396.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "大蒜",
+    "food_type": "食物（商）",
+    "description": "多年来，人们一直在争论大蒜是什么 – 蔬菜或是粮食？并不用讨论，Food Factory公司将大蒜定位为多用途产品。它可以用作制备各种菜肴的成分或作为独立的小吃。直接食用它，不仅能吓跑吸血鬼，还能吓跑许多普通人。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/901136.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "奶粉",
+    "food_type": "食物（商）",
+    "description": "奶粉是通过将奶蒸发至干燥状态而获得的粉末。 这种粉末用于烹饪，也可当作匪徒电影中的可咔因，经验丰富的钓者知道它是饵料混合物的极好添加剂。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/59433.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "方便面",
+    "food_type": "食物（商）",
+    "description": "方便面 – 来自知名公司FoodFactory的另一种产品。就像FoodFactory咖啡一样，面条很容易烹饪。你只需要用开水冲泡它。据生产商介绍，面条生产技术符合高生态标准，其使用不会危害人体和环境。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/108285.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "棉花糖",
+    "food_type": "食物（商）",
+    "description": "经典美式甜点。 烹饪棉花糖的最简单方法是在火上烤它们。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/8131.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "炼乳",
+    "food_type": "食物（商）",
+    "description": "炼乳是通用的产品。它被糖果商广泛使用，并且由于它的卡路里含量和保质期长，在钓者的配方中经常可以找到它。尤其是钓者欣赏炼乳，它不仅可以被食用，而且还可以作为诱饵的组成部分之一。炼乳技术在19世纪由美国Gail Borden获得专利。 谢谢Gail ！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/249097.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "牛奶巧克力",
+    "food_type": "食物（商）",
+    "description": "最近Peter Burg公司以其坚持传统而着称，决定进行前所未有的实验。 他们把牛奶加入黑巧克力中。 因此，迎接来自世界上最传统公司的真正革命吧 - 牛奶巧克力Metropolia!",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/492785.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "牛肉",
+    "food_type": "食物（商）",
+    "description": "在众多的牛肉菜肴中，俄罗斯饺子永远不是最后才想到的菜。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/314810.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "玉米粉",
+    "food_type": "食物（商）",
+    "description": "从磨碎的玉米粒获得的面粉在很多国家菜肴中长期占据强势地位。 它也很受欢迎，因为它是制造鱼饵的原料。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/466431.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "用于热红酒的香料",
+    "food_type": "食物（商）",
+    "description": "由“Food Factory”公司生产的一种用于制作热葡萄酒的香料套装，能够为饮酒的普通活动增添欢乐和意义。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/916057.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "苦巧克力",
+    "food_type": "食物（商）",
+    "description": "Peter Burg公司是最古老的巧克力制造商之一，并以其保守的方式而闻名。他们说公司的工厂仍然使用蒸汽机。 黑巧克力Metropolia的配方 - Peter Burg的骄傲，至今已有一百多年没有改变。 品尝历史的味道！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/867496.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "西梅",
+    "food_type": "食物（商）",
+    "description": "用成熟多汁的西梅果子，您可以制作美味的自制葡萄酒。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/449422.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "速溶咖啡",
+    "food_type": "食物（商）",
+    "description": "FoodFactory公司速溶咖啡 - 根据制造商的说法，它是一种棕色粉末，由天然咖啡豆制成。将粉末溶解在沸水中制备的饮料具有香气和丰富的味道，根据该公司的技术人员的想法，气味和味道非常类似于天然咖啡。在任何情况下，所得到的混合物都会真正的令人兴奋和温暖。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/262646.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "酸奶",
+    "food_type": "食物（商）",
+    "description": "FoodFactory酸奶 – FoodFactory公司实验室的另一研制。无论口味有多不寻常，但这款令人惊叹的饮品可以完美地保鲜，并且不会失去它的营养特性，不管您保存多久。 恶毒之舌强调，这个产品不过是此公司生产的一种“无限期”腐坏的牛奶，但这些言论是如此荒谬，以至于我们甚至不会驳斥他们。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/911789.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Sorbimax",
+    "food_type": "药物",
+    "description": "瞬间起作用的通用制剂。感觉不适时使用。 100％可以消除所有症状。无禁忌。未发现超剂量服用的病例。仅可在有资格认证的销售点购买。警惕假货。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/255397.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "鸡蛋",
+    "food_type": "家庭食品店",
+    "description": "鸡蛋 –最容易获得的蛋白质来源之一，及世界各民族文化中显著标志之一。 但是，我们不要让事情复杂化。 有一个共同的说法：“简单，就如鸡蛋”。 而且这非常简单 - 自己吃鸡蛋，或将其加入诱饵中。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/923096.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "脂油",
+    "food_type": "家庭食品店",
+    "description": "脂油以前脂油是穷人的食物，但在我们这个时代，它是如此受欢迎，许多国家都在争取被认为是该产品发源地的权利。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/689876.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "土豆",
+    "food_type": "家庭食品店",
+    "description": "有很多来自土豆的菜肴的食谱。 很难找到一个没有尝试过任何土豆制品的人。 对于渔民来说，土豆不仅是食物，而且是捕捉鲤鱼的绝好鱼饵。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/944865.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小麦粒",
+    "food_type": "家庭食品店",
+    "description": "小麦既可以作为诱饵，也可以作为钓到的鱼的配菜。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/265400.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一杯克瓦斯",
+    "food_type": "克瓦斯啤酒车",
+    "description": "克瓦斯是传统的斯拉夫饮料之一。现代的俄罗斯克瓦斯与酒精无关, 具有良好的醒神和止口渴的功效。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/620085.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "瓶装克瓦斯",
+    "food_type": "克瓦斯啤酒车",
+    "description": "克瓦斯是传统的斯拉夫饮料之一。现代的俄罗斯克瓦斯与酒精无关, 具有良好的醒神和止口渴的功效。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/686217.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "刚挤出的牛奶",
+    "food_type": "乳品店",
+    "description": "天然的，环保的新鲜牛奶营养特性更像是一顿饭而不是饮料。 本产品含有大量人体必需的物质。 此外，牛奶有助于从身体中清除毒素。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/823454.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "奶渣",
+    "food_type": "乳品店",
+    "description": "奶渣-这是一种含有大量钙盐的富含蛋白质的乳制品。它是许多配方的成分，但也可以直接食用。\t",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/399564.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "酸奶油",
+    "food_type": "乳品店",
+    "description": "酸奶被称为非常美味和健康的酸奶产品，在奶油和酵母的帮助下获得。 酸奶油含有大量人体必需的物质。它对人身体的排毒能力也是众所周知的。\t",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/913248.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "奶酪",
+    "food_type": "乳品店",
+    "description": "奶酪是一种健康和营养的产品。几乎不能找到任何其它产品可以既非常美味，又同样对身体有益。由于其富含人体必需的大量营养物质，奶酪可以使人长时间饱足。\t",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/701754.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小麦粉(大袋)",
+    "food_type": "磨坊",
+    "description": "一袋大袋小麦粉，在一家老磨坊磨碎。 很多很多面粉。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/330134.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "玉米面(大袋)",
+    "food_type": "磨坊",
+    "description": "一大袋玉米面，在一家老磨坊磨碎。 很多很多面粉。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/797712.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "西瓜",
+    "food_type": "卖瓜板车",
+    "description": "果实大，表面有绿色条纹，果肉粉红色，甜美多汁。西瓜虽源自南非，但是如今许多品种在世界许多国家都有种植。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/24655.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "甜瓜",
+    "food_type": "卖瓜板车",
+    "description": "甜瓜明亮柔和的金黄色果皮，果肉清爽。甜瓜在中世纪从亚洲传入欧洲国家。如今在全世界都享有盛名。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/149448.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "当地面包",
+    "food_type": "面包房",
+    "description": "在俄式火炉中烤制，新鲜美味的自制面包。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/358038.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "家里做的脂油",
+    "food_type": "面包房",
+    "description": "按照传统食谱制备的，带带肉层的真正乡村板油。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/358742.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "辣椒伏特加",
+    "food_type": "面包房",
+    "description": "辣椒伏特加酒是一种高度纯化的含酒精饮料。 燃烧的辣秦椒使它特别辣味。 对于那些有人喜欢喝烈性的。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/596875.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "白干儿",
+    "food_type": "面包房",
+    "description": "白干儿是自制烈性酒。 这种浑浊的白色液体不仅能够使大象晕倒，而且还具有令人难忘的味道和香气。 一言以蔽之，是纯爷们儿的劣酒。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/91910.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "熏鳟鱼",
+    "food_type": "KALA",
+    "description": "由于使用纳米技术，牛奶保留了所有有用的特性，同时可以永久保存，即使在开放的包装中也不会损失使用属性。具有鲜明现代设计的一升包装在运输方面非常方便，并且能够让使用者常年喜悦。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/368176.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "KALA伏特加",
+    "food_type": "KALA",
+    "description": "KALA 伏特加是在一家小型家族企业中手工制作的。这种透明的、像北方湖泊的水一样纯净的、味道温和而浓郁。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/867526.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "农夫别尼克",
+    "food_type": "沃尔霍夫酒贩",
+    "description": "这种饮料的创作历史包含了无数的神话和传说。别尼克的制法被称为文化宝藏后就丢失了。 现代制法和配料仅仅完全取决于饮料制造商的想象力。 结果的简单性和不可预测性使其独一无二。 正如他们在大众中所说的那样 - “别尼克喜欢有勇气的，而胆怯的赋予其勇气！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/6631.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "椴树蜂蜜",
+    "food_type": "养蜂场",
+    "description": "蜂蜜自古以来就为人类所知。 它的味道和治疗特性在古文中就有描述。 但重要的是要知道只有选择正规的蜜蜂才能你酿造正规的蜂蜜。我们养蜂场所有的蜜蜂都有官方证书，并定期接受体检。 “正规的蜂蜜”有质量的保证！小心假货！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/906254.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "蜜蜂酒",
+    "food_type": "养蜂场",
+    "description": "蜂蜜酒是地球上最古老的饮料之一。 以蜂蜜和草药为原料制成，不仅口感极佳，而且还有许多有益的特性。 饮用蜂蜜酒是一项高级艺术，被奉为神圣的几个世纪传统，但同时它就像骑自行车一样 - 值得一试，然后就无法停下。 仍然要补充一点，正规的蜂蜜酒只能由正规的蜂蜜制成。“正规的蜂蜜”是质量的保证！小心假货！",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/700303.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "TUNGUS伏特加酒",
+    "food_type": "劳动组合",
+    "description": "TUNGUS伏特加酒是西伯利亚心脏地区的一种饮料。 它像强烈的西伯利亚霜一样充满活力，像夜晚的针叶林中的篝火一样暄热您。 一次品这种酒，就不可能忘记它。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/197599.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "TUNGUS伏特加盒装",
+    "food_type": "劳动组合",
+    "description": "TUNGUS伏特加酒是西伯利亚心脏地区的一种饮料。它像强烈的西伯利亚霜一样充满活力，像夜晚的针叶林中的篝火一样暄热您。一次品这种酒，就不可能忘记它。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/576509.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "安加拉0.33",
+    "food_type": "安哥拉自动贩卖机",
+    "description": "\"碳酸饮料“安加拉”以西伯利亚草药的提取物为基础，具有极佳的口感。 这种饮料不仅可以完全解渴，而且具有明显的滋补作用。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/646261.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "安加拉0.5",
+    "food_type": "安哥拉自动贩卖机",
+    "description": "\"碳酸饮料“安加拉”以西伯利亚草药的提取物为基础，具有极佳的口感。 这种饮料不仅可以完全解渴，而且具有明显的滋补作用。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/745595.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "黑醋栗汁",
+    "food_type": "瓦良格饮料自动贩卖机",
+    "description": "来自俄罗斯北部的传统饮料，主要成分是黑醋栗果。这种散发着特殊芳香的饮料拥有浓郁的酸味。它不仅止渴，对身体也有一定的滋补作用。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/141305.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "带有烟熏香气的黑醋栗汁",
+    "food_type": "瓦良格饮料自动贩卖机",
+    "description": "来自俄罗斯北部的传统饮料，主要成分是黑醋栗果。这种散发着特殊芳香的饮料拥有浓郁的酸味。它不仅止渴，对身体也有一定的滋补作用。这款饮料的特点是伴有一种强烈的烟熏味。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/664678.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Новогодний кёж",
+    "food_type": "瓦良格饮料自动贩卖机",
+    "description": "俄罗斯北部的传统饮料，主要成分是黑醋栗浆果。 这种芳香饮料具有浓郁的酸味。 Kezh完美解渴，具有很强的滋补作用，有助于在剧烈体力消耗后迅速恢复体力。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/106514.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Monkey Cola 0.3",
+    "food_type": "Monkey Cola自动贩卖机",
+    "description": "含糖量高的棕色高度碳酸饮料。Monkey-Cola主要竞争对手声称其生产的饮料具有胜利的味道。Monkey-Сola的味道像什么，这是不可能弄清楚的。没有人尝试过这种美味的饮料，不能或不想描述它。至于它无与伦比的消费属性，随着每一种新的鸡尾酒配方而增长，Monkey-Cola是作为其中一种要素而存在。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/292803.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Monkey Cola 0.5",
+    "food_type": "Monkey Cola自动贩卖机",
+    "description": "含糖量高的棕色高度碳酸饮料。Monkey-Cola主要竞争对手声称其生产的饮料具有胜利的味道。Monkey-Сola的味道像什么，这是不可能弄清楚的。没有人尝试过这种美味的饮料，不能或不想描述它。至于它无与伦比的消费属性，随着每一种新的鸡尾酒配方而增长，Monkey-Cola是作为其中一种要素而存在。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/142005.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "招牌热狗",
+    "food_type": "咖啡车",
+    "description": "【欧鲌】咖啡馆的美味热狗，是快速消除饥饿感的最佳方式。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/303230.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小杯咖啡",
+    "food_type": "咖啡车",
+    "description": "【欧鲌】咖啡馆冲泡的醇郁浓香的咖啡，让您恢复活力和良好的心情。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/720657.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "大杯咖啡",
+    "food_type": "咖啡车",
+    "description": "【欧鲌】咖啡馆冲泡的醇郁浓香的咖啡，让您恢复活力和良好的心情。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/518979.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "Tsarskoe",
+    "food_type": "新年博览会",
+    "description": "Tsarskoe - 来自 Alatyr Wines 公司的高品质起泡酒。 这种酒令人愉悦的口感和浓郁的香气能够让任何人趋之若鹜。 它的名字不言而喻——它是真正的皇家饮品。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/555227.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "库班冰酒",
+    "food_type": "新年博览会",
+    "description": "酒体饱满的麝香葡萄酒，呈金琥珀色。 香气结合了柑橘、香草和蜂蜜的味道。 该酒味道清新，带有成熟水果、蜜饯和蜂蜜的味道。 悠长的蜂蜜柑橘余味。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/484763.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "圣诞麦芽酒",
+    "food_type": "新年博览会",
+    "description": "Christmas Ale 是一种味道浓郁的深色烈性啤酒，由 “拉普星啤酒厂”酿造。 它是您享受一个美妙的假期的绝妙之选。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/812604.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一杯伏特加",
+    "food_type": "新年博览会",
+    "description": "一杯伏特加酒适用于那些不接受半心半意解决方案和腐朽哲学的人，因为它不是满满的，就是完全空虚的。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/570730.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "出口的新年啤酒",
+    "food_type": "新年博览会",
+    "description": "还是老牌的好啤酒《三个坦克手》。按照制造商的说法，这种饮品的味道非常好，因为它未改变配方，仅改变了节日商标的设计。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/832770.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "新年烈性啤酒",
+    "food_type": "新年博览会",
+    "description": "还是老牌的好啤酒《三个坦克手》。按照制造商的说法，这种饮品的味道非常好，因为它未改变配方，仅改变了节日商标的设计。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/272417.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "新年传统啤酒",
+    "food_type": "新年博览会",
+    "description": "还是老牌的好啤酒《三个坦克手》。按照制造商的说法，这种饮品的味道非常好，因为它未改变配方，仅改变了节日商标的设计。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/404683.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "热蜜水",
+    "food_type": "新年博览会",
+    "description": "热蜜水是一种古老的斯拉夫饮品。远古时期到访俄罗斯的外国的商人称之为《俄罗斯的热红酒》。以蜂蜜和各种香料为原料，不仅在寒冷的天气里可以取暖，而且还具有滋补的功效，增加新的力量的作用。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/139546.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一杯茶",
+    "food_type": "新年博览会",
+    "description": "尽管中国是茶叶的发源地，但在俄罗斯，它已经发展成熟，已经成为长期以来的民族文化的一部分。关于这个，有许多谚语和谚语会让任何人感到困惑。例如，为什么如果“茶不是伏特加 - 不要喝太多”，那萨玛瓦尔（水火壶）是这样一个大尺寸的茶炊呢？",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/202415.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "新年小铃铛柠檬水",
+    "food_type": "新年博览会",
+    "description": "新年怎么会没有新年枞树、美食和一套特殊的《小铃铛》柠檬水?",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/568591.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "棒棒糖",
+    "food_type": "新年博览会",
+    "description": "五彩的甜棒棒糖从远古时代开始就是每个节日博览会的标志。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/425904.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "面包圈",
+    "food_type": "新年博览会",
+    "description": "环形小面包 - 由小麦粉制成的面包圈。 环形小面包的受欢迎程度如此之高，以致它成为歌曲和传闻中的主角。特别是，有一句话“从环形小面包上获得一个洞”，意思是：什么都得不到。 由于环形小面包的保质期较短，我们建议您使用新鲜的环形小面包，否则您可能会从环形小面包上得到一个洞。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/517465.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "馅饼",
+    "food_type": "新年博览会",
+    "description": "谁能抵挡诱惑不想品尝刚从烤箱里取出的馅饼？难怪有这样的说法 - “像抢购热馅饼一样”",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/709849.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "一碗鱼汤",
+    "food_type": "新年博览会",
+    "description": "鱼汤是俄罗斯最古老的菜之一。在古代，鱼汤不仅是鱼，它的主要成分可能是家禽，甚至豌豆。然而，如今的汤叫菜完全是因为鱼。但一切并非如此简单：一些烹饪专家说，为了制作传统的鱼汤，只能使用一种鱼，而其他人则认为，在现在的鱼汤中应该有几种鱼。有一件事是肯定的 - 彻底煮熟的鱼汤不仅非常好吃，而且非常有益。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/828605.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "鱼子酱煎饼",
+    "food_type": "新年博览会",
+    "description": "在俄罗斯的传统中，煎饼首先与谢肉节有关 - 这是冬季结束时在俄罗斯庆祝的节日。 他们被送达桌子和其他节日。煎饼可以和蜂蜜，酸奶油和黄油一起食用，但鱼子酱煎饼可以被认为是俄罗斯餐桌上的主要名片之一。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/127353.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "姜粉饼干",
+    "food_type": "新年博览会",
+    "description": "传说姜粉饼干配方的出现是因为中世纪的一名僧人在准备过节的时候误把姜粉和面粉混合在一起。这样的烹饪错误成就了美食。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/618925.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "锁形小白面包",
+    "food_type": "新年博览会",
+    "description": "锁形小白面包是俄罗斯美食的另一种传统产品。在古代，这种美味的糕点的大小和重量被严格定义，因此可以毫无疑问地将其视为特定的黄金标准。现在，烘烤锁形小白面包的规则并不那么严格。 并不是每个人都知道，“达到手”的表达意味着吃掉手上所有的锁形小白面包。 我们希望您能够“达到手”和好胃口。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/818806.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "巧克力鱼",
+    "food_type": "新年博览会",
+    "description": "Peter Burg公司由最美味的牛奶巧克力生产的和金纸包裹的鱼。完全可以称为巧克力稀有鱼。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/213190.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "柑桔",
+    "food_type": "新年博览会",
+    "description": "橘子阳光明媚的鲜艳色彩，即使在恶劣的天气里也能营造出节日的气氛，其汁多、甜中略带酸味、果肉口感宜人、富含维生素。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/611854.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "圣诞老人巧克力",
+    "food_type": "新年博览会",
+    "description": "世界上有许多节日，但新年是最受欢迎的节日。无论是孩子还是大人都期待着这个节日。圣诞老人巧克力是许多人从小熟知并喜爱的礼物，也是年复一年冬季节日中最受欢迎的礼物。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/1248.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "加尔达里卡圣诞热红酒",
+    "food_type": "新年博览会",
+    "description": "加尔达里卡热红酒呈现出浓郁的宝石红色。饮品的香气清晰地散发肉桂、丁香和柑橘的味道。口感辛辣而明亮，带有一丝肉豆蔻的风味。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/34248.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "霞多丽冰酒",
+    "food_type": "新年博览会",
+    "description": "呈金黄色泽，带有琥珀色调的葡萄酒。酒香中散发着柑橘、香草和蜂蜜的气息。口感清新，带有成熟水果、蜜饯和蜂蜜的味道，余味悠长，伴有蜂蜜和柑橘的回甘。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/721617.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "小屋新年造型姜饼",
+    "food_type": "新年博览会",
+    "description": "造型姜饼以糖霜点缀，是烘托节日氛围的传统甜点。姜、桂皮与黑胡椒的加入使口感层次丰富，香气浓郁，与热饮堪称绝配。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/557266.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "手套新年造型姜饼",
+    "food_type": "新年博览会",
+    "description": "造型姜饼以糖霜点缀，是烘托节日氛围的传统甜点。姜、桂皮与黑胡椒的加入使口感层次丰富，香气浓郁，与热饮堪称绝配。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/279859.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "礼盒新年造型姜饼",
+    "food_type": "新年博览会",
+    "description": "造型姜饼以糖霜点缀，是烘托节日氛围的传统甜点。姜、桂皮与黑胡椒的加入使口感层次丰富，香气馥郁，搭配热饮风味更佳。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/41327.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "大鱼新年造型姜饼",
+    "food_type": "新年博览会",
+    "description": "对许多人而言，大鱼象征富足丰饶，而这条姜饼大鱼，不仅寓意吉祥，还格外美味。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/930867.png",
+    "effect": "",
+    "brand": ""
+  },
+  {
+    "name": "冬莓莫尔斯",
+    "food_type": "新年博览会",
+    "description": "造型姜饼以糖霜点缀，是烘托节日氛围的传统甜点。姜、桂皮与黑胡椒的加入使口感层次丰富，香气浓郁，与热饮堪称绝配。",
+    "img": "https://rf4-1317429791.cos.ap-shanghai.myqcloud.com/food/557266.png",
+    "effect": "",
+    "brand": ""
+  }
+]
