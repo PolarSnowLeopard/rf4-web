@@ -113,6 +113,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/food',
+        name: 'manueFood',
+        component: () => import('@/views/FoodList.vue')
+      },
+      {
+        path: '/manue/food/:id',
+        name: 'manueFoodDetail',
+        component: () => import('@/views/FoodDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')

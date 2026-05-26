@@ -92,6 +92,10 @@ const items = computed(() => {
                     key: '/manue/groundbait',
                     label: '诱饵图鉴',
                 },
+                {
+                    key: '/manue/food',
+                    label: '食品图鉴',
+                },
             ],
         },
         {
