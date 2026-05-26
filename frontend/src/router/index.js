@@ -91,6 +91,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/rig',
+        name: 'manueRig',
+        component: () => import('@/views/RigList.vue')
+      },
+      {
+        path: '/manue/rig/:id',
+        name: 'manueRigDetail',
+        component: () => import('@/views/RigDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
