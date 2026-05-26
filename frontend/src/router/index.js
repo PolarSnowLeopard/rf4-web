@@ -124,6 +124,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/accessory',
+        name: 'manueAccessory',
+        component: () => import('@/views/AccessoryList.vue')
+      },
+      {
+        path: '/manue/accessory/:id',
+        name: 'manueAccessoryDetail',
+        component: () => import('@/views/AccessoryDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
