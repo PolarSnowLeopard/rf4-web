@@ -68,3 +68,30 @@ class Lure(models.Model):
     def __str__(self):
         return self.name
 
+
+class Rod(models.Model):
+    """渔竿"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    rod_type = models.CharField('类型', max_length=100, blank=True, default='')
+    sensitivity = models.CharField('灵敏度', max_length=50, blank=True, default='')
+    structure = models.CharField('结构', max_length=100, blank=True, default='')
+    hardness = models.CharField('硬度', max_length=50, blank=True, default='')
+    capacity = models.CharField('能力', max_length=50, blank=True, default='')
+    length = models.CharField('长度', max_length=50, blank=True, default='')
+    strength = models.CharField('强度', max_length=50, blank=True, default='')
+    level_req = models.CharField('等级要求', max_length=50, blank=True, default='')
+    cast_weight = models.CharField('适配重', max_length=50, blank=True, default='')
+    weight = models.CharField('质量', max_length=50, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'rod_type'], name='unique_rod_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+
