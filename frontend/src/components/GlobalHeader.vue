@@ -80,6 +80,10 @@ const items = computed(() => {
                     key: '/manue/line',
                     label: '鱼线图鉴',
                 },
+                {
+                    key: '/manue/hook',
+                    label: '钓钩图鉴',
+                },
             ],
         },
         {

@@ -149,3 +149,24 @@ class Line(models.Model):
     def __str__(self):
         return self.name
 
+
+class Hook(models.Model):
+    """钓钩"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    hook_type = models.CharField('类型', max_length=100, blank=True, default='')
+    size = models.CharField('大小', max_length=200, blank=True, default='')
+    max_load = models.CharField('限制', max_length=200, blank=True, default='')
+    brand = models.CharField('品牌', max_length=100, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'hook_type'], name='unique_hook_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+

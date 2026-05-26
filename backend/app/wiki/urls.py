@@ -5,6 +5,7 @@ from wiki.views.lureView import lure_list, lure_detail, lure_types
 from wiki.views.rodView import rod_list, rod_detail, rod_types
 from wiki.views.reelView import reel_list, reel_detail, reel_types
 from wiki.views.lineView import line_list, line_detail, line_types
+from wiki.views.hookView import hook_list, hook_detail, hook_types
 
 urlpatterns = [
     path('fish', fish_list),
@@ -24,4 +25,7 @@ urlpatterns = [
     path('line', line_list),
     path('line/types', line_types),
     path('line/<int:pk>', line_detail),
+    path('hook', hook_list),
+    path('hook/types', hook_types),
+    path('hook/<int:pk>', hook_detail),
 ]
