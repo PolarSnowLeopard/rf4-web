@@ -1,6 +1,7 @@
 from django.urls import path
 from wiki.views.fishView import fish_list, fish_detail
 from wiki.views.baitView import bait_list, bait_detail, bait_types
+from wiki.views.lureView import lure_list, lure_detail, lure_types
 
 urlpatterns = [
     path('fish', fish_list),
@@ -8,4 +9,7 @@ urlpatterns = [
     path('bait', bait_list),
     path('bait/types', bait_types),
     path('bait/<int:pk>', bait_detail),
+    path('lure', lure_list),
+    path('lure/types', lure_types),
+    path('lure/<int:pk>', lure_detail),
 ]
