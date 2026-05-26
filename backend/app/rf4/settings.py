@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'user',
     'wiki',
     'recognition',
+    'agent',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',
