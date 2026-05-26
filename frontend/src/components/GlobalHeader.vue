@@ -72,6 +72,10 @@ const items = computed(() => {
                     key: '/manue/rod',
                     label: '渔竿图鉴',
                 },
+                {
+                    key: '/manue/reel',
+                    label: '渔轮图鉴',
+                },
             ],
         },
         {

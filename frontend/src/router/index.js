@@ -58,6 +58,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/reel',
+        name: 'manueReel',
+        component: () => import('@/views/ReelList.vue')
+      },
+      {
+        path: '/manue/reel/:id',
+        name: 'manueReelDetail',
+        component: () => import('@/views/ReelDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')

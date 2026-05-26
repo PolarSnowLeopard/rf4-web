@@ -55,3 +55,4 @@ legacy/desktop/*.spec.bak
 logs/
 tmp/
 temp/
+backend/scripts/scraper/reel/upload_cos.py
