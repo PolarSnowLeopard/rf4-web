@@ -80,6 +80,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/hook',
+        name: 'manueHook',
+        component: () => import('@/views/HookList.vue')
+      },
+      {
+        path: '/manue/hook/:id',
+        name: 'manueHookDetail',
+        component: () => import('@/views/HookDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
