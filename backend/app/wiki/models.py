@@ -44,3 +44,27 @@ class Bait(models.Model):
     def __str__(self):
         return self.name
 
+
+class Lure(models.Model):
+    """拟饵"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    lure_type = models.CharField('形式', max_length=100, blank=True, default='')
+    length = models.CharField('长度', max_length=50, blank=True, default='')
+    size = models.CharField('大小', max_length=50, blank=True, default='')
+    weight = models.CharField('质量', max_length=50, blank=True, default='')
+    hook_size = models.CharField('鱼钩尺寸', max_length=100, blank=True, default='')
+    unlock_skill = models.CharField('解锁技能', max_length=200, blank=True, default='')
+    hook_component = models.CharField('钓钩组件', max_length=200, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'lure_type'], name='unique_lure_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+

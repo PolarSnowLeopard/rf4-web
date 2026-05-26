@@ -64,6 +64,10 @@ const items = computed(() => {
                     key: '/manue/bait',
                     label: '鱼饵图鉴',
                 },
+                {
+                    key: '/manue/lure',
+                    label: '拟饵图鉴',
+                },
             ],
         },
         {

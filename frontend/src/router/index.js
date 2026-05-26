@@ -36,6 +36,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/lure',
+        name: 'manueLure',
+        component: () => import('@/views/LureList.vue')
+      },
+      {
+        path: '/manue/lure/:id',
+        name: 'manueLureDetail',
+        component: () => import('@/views/LureDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
