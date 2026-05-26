@@ -20,3 +20,27 @@ class Fish(models.Model):
     def __str__(self):
         return self.name
 
+
+class Bait(models.Model):
+    """鱼饵"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    bait_type = models.CharField('形式', max_length=100, blank=True, default='')
+    buoyancy = models.CharField('浮力', max_length=50, blank=True, default='')
+    weight = models.CharField('质量', max_length=50, blank=True, default='')
+    water_weight = models.CharField('水中重量', max_length=50, blank=True, default='')
+    hook_size = models.CharField('鱼钩尺寸', max_length=100, blank=True, default='')
+    brand = models.CharField('品牌', max_length=100, blank=True, default='')
+    size = models.CharField('大小', max_length=50, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'bait_type'], name='unique_bait_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+
