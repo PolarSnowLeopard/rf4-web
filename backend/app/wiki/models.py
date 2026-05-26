@@ -95,3 +95,34 @@ class Rod(models.Model):
     def __str__(self):
         return self.name
 
+
+class Reel(models.Model):
+    """渔轮"""
+    name = models.CharField('名称', max_length=200)
+    description = models.TextField('描述', blank=True, default='')
+    img = models.CharField('图片', max_length=255, blank=True, default='')
+    reel_type = models.CharField('类型', max_length=100, blank=True, default='')
+    form = models.CharField('形式', max_length=100, blank=True, default='')
+    saltwater = models.CharField('防海水', max_length=50, blank=True, default='')
+    size = models.CharField('大小', max_length=50, blank=True, default='')
+    gear_ratio = models.CharField('传动比', max_length=50, blank=True, default='')
+    friction_brake = models.CharField('摩擦制动力', max_length=50, blank=True, default='')
+    line_retrieve_speed = models.CharField('回线速度', max_length=50, blank=True, default='')
+    max_drag = models.CharField('锁轮拉力', max_length=50, blank=True, default='')
+    cast_weight = models.CharField('测试/适配重', max_length=100, blank=True, default='')
+    line_capacity = models.TextField('线轴容量', blank=True, default='')
+    level_req = models.CharField('等级要求', max_length=50, blank=True, default='')
+    price_silver = models.CharField('银币', max_length=50, blank=True, default='')
+    price_gold = models.CharField('金币', max_length=50, blank=True, default='')
+    rating = models.CharField('评级', max_length=50, blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'reel_type'], name='unique_reel_name_type')
+        ]
+
+    def __str__(self):
+        return self.name
+
