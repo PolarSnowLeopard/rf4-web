@@ -25,6 +25,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/bait',
+        name: 'manueBait',
+        component: () => import('@/views/BaitList.vue')
+      },
+      {
+        path: '/manue/bait/:id',
+        name: 'manueBaitDetail',
+        component: () => import('@/views/BaitDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
