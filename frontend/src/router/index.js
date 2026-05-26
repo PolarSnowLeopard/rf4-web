@@ -47,6 +47,17 @@ const routes = [
         props: true
       },
       {
+        path: '/manue/rod',
+        name: 'manueRod',
+        component: () => import('@/views/RodList.vue')
+      },
+      {
+        path: '/manue/rod/:id',
+        name: 'manueRodDetail',
+        component: () => import('@/views/RodDetailView.vue'),
+        props: true
+      },
+      {
         path: '/user/login',
         name: 'userLogin',
         component: () => import('@/views/user/UserLogin.vue')
