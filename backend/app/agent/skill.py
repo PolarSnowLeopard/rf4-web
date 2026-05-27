@@ -1,15 +1,21 @@
 """
-Agent Skill: 钓鱼助手工具使用指南
+Agent Skill loader — reads SKILL.md files following the Agent Skills standard,
+parses YAML frontmatter, and renders templates with runtime data.
 
-This module builds a system prompt that includes database metadata,
-so the LLM knows what's searchable without needing a separate tool call.
-The "skill" is injected knowledge that guides efficient tool use.
+Skills live in agent/skills/<skill-name>/SKILL.md.
+Template variables (e.g. {{db_overview}}) are substituted at build time.
 """
+
+import os
+import re
+from pathlib import Path
 
 from django.db.models import Count
 from wiki.models import (
     Fish, Bait, Lure, Rod, Reel, Line, Hook, Rig, Groundbait, Food, Accessory
 )
+
+SKILLS_DIR = Path(__file__).parent / 'skills'
 
 CATEGORY_META = [
     ('fish', Fish, 'fish_class', '鱼类'),
@@ -27,7 +33,6 @@ CATEGORY_META = [
 
 
 def _get_database_overview() -> str:
-    """Generate a concise overview of all wiki categories, types, and sample names."""
     lines = []
     for category, model_class, type_field, label in CATEGORY_META:
         total = model_class.objects.count()
@@ -49,35 +54,36 @@ def _get_database_overview() -> str:
     return '\n'.join(lines)
 
 
+def _load_skill_md(skill_name: str) -> str:
+    """Load a SKILL.md file, strip YAML frontmatter, return body."""
+    skill_path = SKILLS_DIR / skill_name / 'SKILL.md'
+    if not skill_path.exists():
+        raise FileNotFoundError(f"Skill not found: {skill_path}")
+
+    content = skill_path.read_text(encoding='utf-8')
+
+    # Strip YAML frontmatter (between --- delimiters)
+    if content.startswith('---'):
+        end = content.find('---', 3)
+        if end != -1:
+            content = content[end + 3:].lstrip('\n')
+
+    return content
+
+
+def _render_template(template: str, variables: dict) -> str:
+    """Replace {{variable}} placeholders with provided values."""
+    def replacer(match):
+        key = match.group(1).strip()
+        return variables.get(key, match.group(0))
+
+    return re.sub(r'\{\{(\w+)\}\}', replacer, template)
+
+
 def build_system_prompt() -> str:
-    """Build the full system prompt with skill knowledge injected."""
-    db_overview = _get_database_overview()
-
-    return f"""你是俄钓4（Russian Fishing 4）钓鱼助手，一个专业的游戏内钓鱼顾问。
-
-## 你的职责
-1. 回答玩家关于装备搭配、钓法选择的问题
-2. 根据目标鱼种推荐合适的钓组配置（竿+轮+线+钩+饵）
-3. 查询物品详情、对比不同装备
-4. 提供钓鱼技巧和建议
-
-## 数据库概览（你可以搜索的内容）
-
-以下是图鉴数据库中各品类的类型和示例，搜索时请参考这些信息选择正确的 category 和 type_filter：
-
-{db_overview}
-
-## 工具使用指南
-
-你有两个工具：
-1. `search_wiki(category, query, type_filter, limit)` — 搜索图鉴，category 必填，query 按名称模糊搜索，type_filter 按上面列出的类型精确筛选
-2. `get_detail(category, id)` — 获取单个物品的完整详情
-
-高效搜索原则：
-- 用 type_filter 按类型筛选比用 query 猜关键词更精准（如搜鲤鱼竿用 type_filter="鲤鱼竿"）
-- query 用简短中文关键词，不要用英文
-- 一次请求适当增大 limit（如 limit=20）获取足够数据，避免反复搜索
-- 你本身具备丰富的RF4知识，简单推荐可以直接回答，只在需要确认具体属性时才查询
-
-## 回答风格
-简洁实用，像一个经验丰富的钓友在给建议。使用中文回答。"""
+    """Build the full system prompt from the fishing-assistant skill."""
+    template = _load_skill_md('fishing-assistant')
+    variables = {
+        'db_overview': _get_database_overview(),
+    }
+    return _render_template(template, variables)

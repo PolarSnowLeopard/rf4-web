@@ -75,3 +75,7 @@ Backend only (`.github/workflows/backend-cicd.yml`): on push to `main` → build
 - Backend uses `ENV=dev` env var to toggle debug mode and SQLite vs MySQL
 - Production backend runs via Gunicorn + Uvicorn workers on port 9999
 - CORS is configured for `http://fdueblab.cn:5173` only
+
+## Git Commit Rules
+
+- Do NOT add `Co-Authored-By` lines to commit messages
