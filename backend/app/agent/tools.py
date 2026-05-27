@@ -86,24 +86,6 @@ TOOL_DEFINITIONS = [
             }
         }
     },
-    {
-        "type": "function",
-        "function": {
-            "name": "get_wiki_guide",
-            "description": "获取图鉴数据库的概览信息：各品类有哪些类型、每种类型有多少条目。在不确定数据库里有什么内容时，先调用此工具了解可搜索的范围。",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "category": {
-                        "type": "string",
-                        "enum": list(CATEGORY_MAP.keys()),
-                        "description": "要查看的品类，留空则返回所有品类概览"
-                    }
-                },
-                "required": []
-            }
-        }
-    },
 ]
 
 
@@ -160,62 +142,6 @@ def execute_get_detail(category: str, item_id: int) -> str:
     return json.dumps(_model_to_dict(obj), ensure_ascii=False)
 
 
-def execute_get_wiki_guide(category: str = '') -> str:
-    """Return overview of database: types and counts per category."""
-    from django.db.models import Count
-
-    CATEGORY_LABELS = {
-        'fish': '鱼类', 'bait': '鱼饵', 'lure': '拟饵', 'rod': '渔竿',
-        'reel': '渔轮', 'line': '鱼线', 'hook': '钓钩', 'rig': '钓组',
-        'groundbait': '诱饵', 'food': '食品', 'accessory': '辅助用品',
-    }
-
-    if category and category in CATEGORY_MAP:
-        model_class = CATEGORY_MAP[category]
-        type_field = TYPE_FIELD_MAP.get(category)
-        total = model_class.objects.count()
-        types_info = []
-        if type_field:
-            type_counts = (
-                model_class.objects.values(type_field)
-                .annotate(count=Count('id'))
-                .order_by('-count')
-            )
-            for tc in type_counts:
-                type_name = tc[type_field] or '未分类'
-                types_info.append({"type": type_name, "count": tc['count']})
-
-        sample_names = list(
-            model_class.objects.values_list('name', flat=True)[:20]
-        )
-
-        return json.dumps({
-            "category": category,
-            "label": CATEGORY_LABELS.get(category, category),
-            "total": total,
-            "types": types_info,
-            "sample_names": sample_names,
-        }, ensure_ascii=False)
-    else:
-        overview = []
-        for cat, model_class in CATEGORY_MAP.items():
-            type_field = TYPE_FIELD_MAP.get(cat)
-            total = model_class.objects.count()
-            types = []
-            if type_field:
-                types = list(
-                    model_class.objects.values_list(type_field, flat=True)
-                    .distinct().order_by(type_field)
-                )
-            overview.append({
-                "category": cat,
-                "label": CATEGORY_LABELS.get(cat, cat),
-                "total": total,
-                "types": types,
-            })
-        return json.dumps(overview, ensure_ascii=False)
-
-
 def execute_tool(name: str, arguments: dict) -> str:
     if name == 'search_wiki':
         return execute_search_wiki(
@@ -228,10 +154,6 @@ def execute_tool(name: str, arguments: dict) -> str:
         return execute_get_detail(
             category=arguments.get('category', ''),
             item_id=arguments.get('id', 0),
-        )
-    elif name == 'get_wiki_guide':
-        return execute_get_wiki_guide(
-            category=arguments.get('category', ''),
         )
     else:
         return json.dumps({"error": f"未知工具: {name}"}, ensure_ascii=False)

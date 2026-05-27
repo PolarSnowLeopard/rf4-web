@@ -6,27 +6,9 @@ from rest_framework.response import Response
 import litellm
 from services.llm.config import get_llm_settings
 from agent.tools import TOOL_DEFINITIONS, execute_tool
+from agent.skill import build_system_prompt
 
 litellm.drop_params = True
-
-SYSTEM_PROMPT = """你是俄钓4（Russian Fishing 4）钓鱼助手，一个专业的游戏内钓鱼顾问。
-
-你可以访问完整的游戏图鉴数据库，包括：鱼类(fish)、鱼饵(bait)、拟饵(lure)、渔竿(rod)、渔轮(reel)、鱼线(line)、钓钩(hook)、钓组(rig)、诱饵(groundbait)、食品(food)、辅助用品(accessory)。
-
-你的职责：
-1. 回答玩家关于装备搭配、钓法选择的问题
-2. 根据目标鱼种推荐合适的钓组配置（竿+轮+线+钩+饵）
-3. 查询物品详情、对比不同装备
-4. 提供钓鱼技巧和建议
-
-高效使用工具的原则：
-- 不确定数据库有什么时，先调 get_wiki_guide 了解各品类的类型和示例数据
-- 每次搜索尽量用简短中文关键词，或留空query用type_filter按类型筛选
-- 一次搜索能解决的不要分多次，适当增大limit获取足够数据
-- 推荐装备时，你可以基于自己的游戏知识直接推荐，只在需要确认具体属性时才查询
-- 不需要为每个推荐都去搜索验证，你本身具备丰富的RF4知识
-
-回答风格：简洁实用，像一个经验丰富的钓友在给建议。使用中文回答。"""
 
 MAX_TOOL_ROUNDS = 40
 
@@ -45,7 +27,8 @@ def agent_chat(request):
     api_key = llm_config.get('api_key') or settings.openrouter_api_key
     api_base = llm_config.get('base_url') or settings.openrouter_base_url
 
-    full_messages = [{"role": "system", "content": SYSTEM_PROMPT}] + messages
+    system_prompt = build_system_prompt()
+    full_messages = [{"role": "system", "content": system_prompt}] + messages
 
     for _ in range(MAX_TOOL_ROUNDS):
         try:
@@ -102,7 +85,8 @@ def agent_chat_stream(request):
     api_base = llm_config.get('base_url') or settings.openrouter_base_url
 
     def event_stream():
-        full_messages = [{"role": "system", "content": SYSTEM_PROMPT}] + messages
+        system_prompt = build_system_prompt()
+        full_messages = [{"role": "system", "content": system_prompt}] + messages
 
         for _ in range(MAX_TOOL_ROUNDS):
             try:
@@ -122,15 +106,11 @@ def agent_chat_stream(request):
 
             collected_content = ""
             tool_calls_data = {}
-            finish_reason = None
 
             for chunk in resp:
                 delta = chunk.choices[0].delta if chunk.choices else None
                 if not delta:
                     continue
-
-                if chunk.choices[0].finish_reason:
-                    finish_reason = chunk.choices[0].finish_reason
 
                 if delta.content:
                     collected_content += delta.content
